@@ -17,7 +17,7 @@ SSRR后端部署程序
 - wget https://download.libsodium.org/libsodium/releases/libsodium-1.0.18-stable.tar.gz
 - tar -zxf libsodium-1.0.18-stable.tar.gz
 - cd libsodium-stable
-备用下载地址：https://down.24kplus.com/linux/libsodium-1.0.18-stable.tar.gz
+- 备用下载地址：https://down.24kplus.com/linux/libsodium-1.0.18-stable.tar.gz
 
 2、编译安装
 - ./configure --prefix=/usr
