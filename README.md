@@ -151,36 +151,36 @@ sh tail.sh
 chmod +x /etc/rc.d/rc.local
 vi /etc/rc.d/rc.local
  
-# 加入下面的命令，保存
+#### 加入下面的命令，保存
 bash /root/ShadowSocksR/run.sh
 
 
-#### CentOS 7.0查看和关闭防火墙
+# CentOS 7.0查看和关闭防火墙
 
-# 查看防火墙状态
+#### 查看防火墙状态
 
 firewall-cmd --state
 
-# 停止firewall
+#### 停止firewall
 
 systemctl stop firewalld.service
 
-# 禁止firewall开机启动
+#### 禁止firewall开机启动
 
 systemctl disable firewalld.service 
 
 
 
-#### 校时
+# 校时
 如果架构是“面板机-数据库机-多节点机”，请务必保持各个服务器之间的时间一致，否则会产生：节点的在线数不准确、产生最后使用时间异常、单端口多用户功能失效等。
 推荐统一使用CST时间并安装校时服务：
-#设置时区为东八区
+####设置时区为东八区
 timedatectl set-timezone Asia/Shanghai
-#自动同步服务器时间
+####自动同步服务器时间
 yum install ntp
 ntpdate cn.pool.ntp.org
 
-#### 其他
+# 其他
 
 数据库机的 iptables、firewall 得对本节点IP开放
 数据库机的 mysql 的对本节点进行授权（不推荐使用root账号）
