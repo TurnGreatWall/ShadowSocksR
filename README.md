@@ -12,27 +12,17 @@
 
 # Centos7 安装pip
 
-1.首先查看Python版本,一般Centos 7以上都会默认安装Python
-
-- pyhton  version
-
-2.安装pip
-
-- yum install python-pip
-
-这样一般会显示找不到python-pip包
-
- 
-
-需要先安装epel扩展源
+1.先安装epel扩展源
 
 EPEL(http://fedoraproject.org/wiki/EPEL) 是由 Fedora 社区打造，为 RHEL 及衍生发行版如 CentOS、Scientific Linux 等提供高质量软件包的项目。
 
 - yum -y install epel-release
 
-然后装pip
+
+2.安装pip
 
 - yum install python-pip
+
 
 3.测试pip是否安装成功
 
@@ -40,9 +30,7 @@ EPEL(http://fedoraproject.org/wiki/EPEL) 是由 Fedora 社区打造，为 RHEL �
 
  
 
-注意：但是有时候发现还是安装不成功，
-
-可以用下面办法
+(注意：但是有时候发现还是安装不成功，可以用下面办法
 
 （1）安装setuptools
 - yum install -y python-setuptools
@@ -55,6 +43,7 @@ EPEL(http://fedoraproject.org/wiki/EPEL) 是由 Fedora 社区打造，为 RHEL �
 （3）测试pip是否安装成功
 
 - pip
+)
 
 
 
