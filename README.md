@@ -90,7 +90,7 @@ config.status: error: Something went wrong bootstrapping makefile fragments
 
 - cd /root
 - git clone https://github.com/TurnGreatWall/ShadowSocksR.git
-- cd shadowsocksr
+- cd ShadowSocksR
 
 
 
