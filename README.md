@@ -71,7 +71,7 @@ EPEL(http://fedoraproject.org/wiki/EPEL) 是由 Fedora 社区打造，为 RHEL �
      the package (albeit without support for automatic dependency tracking). 
 #### 执行：
 
-    - yum install make -y
+      yum install make -y
 
 
 
