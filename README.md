@@ -10,31 +10,6 @@
 - yum -y install wget
 
 
-# CentOS 7/8 安装 libsodium 最新版
-#### 
-
-1、下载并解压
-- wget https://download.libsodium.org/libsodium/releases/libsodium-1.0.18-stable.tar.gz
-- tar -zxf libsodium-1.0.18-stable.tar.gz
-- cd libsodium-stable
-- 备用下载地址：https://down.24kplus.com/linux/libsodium-1.0.18-stable.tar.gz
-
-2、编译安装
-- ./configure --prefix=/usr
-- make && make check
-- make install
-- echo /usr/local/lib > /etc/ld.so.conf.d/usr_local_lib.conf
-- ldconfig
-#### 如出现以下错误：
-
-config.status: error: Something went wrong bootstrapping makefile fragments
-     for automatic dependency tracking.  Try re-running configure with the
-     '--disable-dependency-tracking' option to at least be able to build
-     the package (albeit without support for automatic dependency tracking). 
-#### 执行：
-
-- yum install make -y
-
 # Centos7 安装pip
 
 1.首先查看Python版本,一般Centos 7以上都会默认安装Python
@@ -80,6 +55,34 @@ EPEL(http://fedoraproject.org/wiki/EPEL) 是由 Fedora 社区打造，为 RHEL �
 （3）测试pip是否安装成功
 
 - pip
+
+
+
+# CentOS 7/8 安装 libsodium 最新版
+#### 
+
+1、下载并解压
+- wget https://download.libsodium.org/libsodium/releases/libsodium-1.0.18-stable.tar.gz
+- tar -zxf libsodium-1.0.18-stable.tar.gz
+- cd libsodium-stable
+- 备用下载地址：https://down.24kplus.com/linux/libsodium-1.0.18-stable.tar.gz
+
+2、编译安装
+- ./configure --prefix=/usr
+- make && make check
+- make install
+- echo /usr/local/lib > /etc/ld.so.conf.d/usr_local_lib.conf
+- ldconfig
+#### 如出现以下错误：
+
+config.status: error: Something went wrong bootstrapping makefile fragments
+     for automatic dependency tracking.  Try re-running configure with the
+     '--disable-dependency-tracking' option to at least be able to build
+     the package (albeit without support for automatic dependency tracking). 
+#### 执行：
+
+- yum install make -y
+
 
 
 
