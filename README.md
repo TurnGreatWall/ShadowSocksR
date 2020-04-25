@@ -138,11 +138,11 @@ EPEL(http://fedoraproject.org/wiki/EPEL) 是由 Fedora 社区打造，为 RHEL �
 - sh tail.sh
 
 
-#### SSR 开机启动
+# SSR 开机启动
 - chmod +x /etc/rc.d/rc.local
 - vi /etc/rc.d/rc.local
  
-#### 加入下面的命令，保存
+# 加入下面的命令，保存
 - bash /root/shadowsocksr/run.sh
 
 
