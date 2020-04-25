@@ -171,6 +171,8 @@ config.status: error: Something went wrong bootstrapping makefile fragments
 - systemctl disable firewalld.service 
 
 
+# 更换DNS为谷歌DNS
+- echo -e "nameserver 8.8.8.8\nnameserver 8.8.4.4" > /etc/resolv.conf
 
 # 校时
 #### 如果架构是“面板机-数据库机-多节点机”，请务必保持各个服务器之间的时间一致，否则会产生：节点的在线数不准确、产生最后使用时间异常、单端口多用户功能失效等。
