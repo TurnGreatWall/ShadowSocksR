@@ -2,17 +2,15 @@ SSRR
 
 兼容SSRPanel的自改版SSR(R)后端，可兼容原版SS、SSR，本版本是带有IP自动上报功能的
 
-## 安装
-- git clone https://github.com/TurnGreatWall/ShadowSocksR.git
 
-## 更新软件源
+# 更新软件源
 #### CentOS 7
 - yum -y update
 - yum -y groupinstall "Development Tools"
 - yum -y install wget
 
 
-## CentOS 7/8 安装 libsodium 最新版
+# CentOS 7/8 安装 libsodium 最新版
 #### 
 
 1、下载并解压
@@ -37,7 +35,7 @@ config.status: error: Something went wrong bootstrapping makefile fragments
 
 yum install make -y
 
-#### Centos7 安装pip
+# Centos7 安装pip
 
 1.首先查看Python版本,一般Centos 7以上都会默认安装Python
 
@@ -85,7 +83,7 @@ pip
 
 
 
-#### 拉取SSR文件
+# 拉取SSR文件
 
 cd /root
 git clone https://github.com/TurnGreatWall/ShadowSocksR.git
@@ -93,14 +91,14 @@ cd shadowsocksr
 
 
 
-#### 安装依赖
+# 安装依赖
 
 sh ./setup_cymysql2.sh
 pip install -r requestment.txt
 
 
 
-#### 编辑数据库连接信息
+# 编辑数据库连接信息
 
     vi usermysql.json
 
@@ -114,7 +112,7 @@ pip install -r requestment.txt
     
     
     
-#### 编辑节点配置（混淆、协议、限速、IPV6）
+#编辑节点配置（混淆、协议、限速、IPV6）
 
     vi user-mysql.json
 
