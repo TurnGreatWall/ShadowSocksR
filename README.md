@@ -93,15 +93,15 @@ EPEL(http://fedoraproject.org/wiki/EPEL) 是由 Fedora 社区打造，为 RHEL �
 
 # 编辑数据库连接信息
 
-    vi usermysql.json
+- vi usermysql.json
 
-    host 数据库地址，如果是本机就是127.0.0.1
-    port 数据库连接端口
-    user 数据库连接用户，不推荐使用root
-    password 数据库连接密码
-    db 面板所在数据库
-    node_id 节点ID，对应面板里的 节点列表 最左侧的id（请先将面板搭建好，然后创建一个节点，就有节点ID了）
-    transfer_mul 节点流量计算比例，默认1.0，填1也可以，1表示：用了100M算100M，10表示用了100M算1000M，0.1表示用了100M算10M。
+host 数据库地址，如果是本机就是127.0.0.1
+port 数据库连接端口
+user 数据库连接用户，不推荐使用root
+password 数据库连接密码
+db 面板所在数据库
+node_id 节点ID，对应面板里的 节点列表 最左侧的id（请先将面板搭建好，然后创建一个节点，就有节点ID了）
+transfer_mul 节点流量计算比例，默认1.0，填1也可以，1表示：用了100M算100M，10表示用了100M算1000M，0.1表示用了100M算10M。
     
     
     
