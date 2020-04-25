@@ -33,16 +33,16 @@ EPEL(http://fedoraproject.org/wiki/EPEL) 是由 Fedora 社区打造，为 RHEL �
 # (注意：但是有时候发现还是安装不成功，可以用下面办法)
 
     （1）安装setuptools
-    - yum install -y python-setuptools
+      yum install -y python-setuptools
     安装完毕后，easy_install命令就可以使用了
     
     （2）安装pip
-    - easy_install pip
+      easy_install pip
     通过easy_install安装pip是最为简单的方法。pip默认安装到/usr/bin目录下。
     
     （3）测试pip是否安装成功
 
-    - pip
+      pip
 
 
 
