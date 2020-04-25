@@ -130,20 +130,20 @@ pip install -r requestment.txt
 
 
 
-#### 运行、关闭、看日志
+# 运行、关闭、看日志
 
-# 试运行，如果没有错误输出则可以用Ctrl+C关闭，然后后台运行
+#### 试运行，如果没有错误输出则可以用Ctrl+C关闭，然后后台运行
 python server.py
  
-# 后台运行
+#### 后台运行
 bash run.sh
  
-# 其他命令
-# 运行并记录日志
+#### 其他命令
+#### 运行并记录日志
 sh logrun.sh
-# 停止
+#### 停止
 sh stop.sh
-# 查看日志
+#### 查看日志
 sh tail.sh
 
 
@@ -184,5 +184,4 @@ ntpdate cn.pool.ntp.org
 
 数据库机的 iptables、firewall 得对本节点IP开放
 数据库机的 mysql 的对本节点进行授权（不推荐使用root账号）
-再不懂可以进小群咨询 [我要进小群](https://github.com/ssrpanel/SSRPanel/wiki/%E6%88%91%E8%A6%81%E8%BF%9B%E5%B0%8F%E7%BE%A4)
 
