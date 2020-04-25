@@ -1,6 +1,6 @@
-SSRR后端部署程序
+# SSRR后端部署程序
 
-兼容SSRPanel的自改版SSR(R)后端，可兼容原版SS、SSR，本版本是带有IP自动上报功能的
+#### 兼容SSRPanel的自改版SSR(R)后端，可兼容原版SS、SSR，本版本是带有IP自动上报功能的
 
 
 # 更新软件源
@@ -25,13 +25,13 @@ SSRR后端部署程序
 - make install
 - echo /usr/local/lib > /etc/ld.so.conf.d/usr_local_lib.conf
 - ldconfig
-- 如出现以下错误：
+#### 如出现以下错误：
 
 config.status: error: Something went wrong bootstrapping makefile fragments
      for automatic dependency tracking.  Try re-running configure with the
      '--disable-dependency-tracking' option to at least be able to build
      the package (albeit without support for automatic dependency tracking). 
-- 执行：
+#### 执行：
 
 - yum install make -y
 
