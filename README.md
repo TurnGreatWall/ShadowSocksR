@@ -54,12 +54,15 @@ EPEL(http://fedoraproject.org/wiki/EPEL) 是由 Fedora 社区打造，为 RHEL �
 - cd libsodium-stable
 - 备用下载地址：https://down.24kplus.com/linux/libsodium-1.0.18-stable.tar.gz
 
+
 2、编译安装
 - ./configure --prefix=/usr
 - make && make check
 - make install
 - echo /usr/local/lib > /etc/ld.so.conf.d/usr_local_lib.conf
 - ldconfig
+
+
 #### 如出现以下错误：
 
 config.status: error: Something went wrong bootstrapping makefile fragments
