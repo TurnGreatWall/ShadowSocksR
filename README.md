@@ -153,7 +153,7 @@ config.status: error: Something went wrong bootstrapping makefile fragments
 - vi /etc/rc.d/rc.local
  
 #### 加入下面的命令，保存
-- bash /root/ShadowSocksR/run.sh
+- bash /root/shadowsocksr/run.sh
 
 
 # CentOS 7.0查看和关闭防火墙
