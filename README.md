@@ -180,6 +180,6 @@ EPEL(http://fedoraproject.org/wiki/EPEL) 是由 Fedora 社区打造，为 RHEL �
 
 # 其他
 
-数据库机的 iptables、firewall 得对本节点IP开放
-数据库机的 mysql 的对本节点进行授权（不推荐使用root账号）
+- 数据库机的 iptables、firewall 得对本节点IP开放
+- 数据库机的 mysql 的对本节点进行授权（不推荐使用root账号）
 
