@@ -177,9 +177,9 @@ config.status: error: Something went wrong bootstrapping makefile fragments
 # 校时
 #### 如果架构是“面板机-数据库机-多节点机”，请务必保持各个服务器之间的时间一致，否则会产生：节点的在线数不准确、产生最后使用时间异常、单端口多用户功能失效等。
 #### 推荐统一使用CST时间并安装校时服务：
-### 设置时区为东八区
+## 设置时区为东八区
 - timedatectl set-timezone Asia/Shanghai
-### 自动同步服务器时间
+## 自动同步服务器时间
 - yum install ntp
 - ntpdate cn.pool.ntp.org
 
