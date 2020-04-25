@@ -89,8 +89,8 @@ config.status: error: Something went wrong bootstrapping makefile fragments
 # 拉取SSR文件
 
 - cd /root
-- git clone https://github.com/TurnGreatWall/ShadowSocksR.git
-- cd ShadowSocksR
+- git clone https://github.com/TurnGreatWall/shadowsocksr.git
+- cd shadowsocksr
 
 
 
