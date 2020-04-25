@@ -65,13 +65,13 @@ EPEL(http://fedoraproject.org/wiki/EPEL) 是由 Fedora 社区打造，为 RHEL �
 
 #### 如出现以下错误：
 
-config.status: error: Something went wrong bootstrapping makefile fragments
+     config.status: error: Something went wrong bootstrapping makefile fragments
      for automatic dependency tracking.  Try re-running configure with the
      '--disable-dependency-tracking' option to at least be able to build
      the package (albeit without support for automatic dependency tracking). 
 #### 执行：
 
-- yum install make -y
+    - yum install make -y
 
 
 
