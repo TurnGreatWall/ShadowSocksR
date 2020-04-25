@@ -25,13 +25,13 @@ SSRR
 - make install
 - echo /usr/local/lib > /etc/ld.so.conf.d/usr_local_lib.conf
 - ldconfig
-如出现以下错误：
+- 如出现以下错误：
 
 config.status: error: Something went wrong bootstrapping makefile fragments
      for automatic dependency tracking.  Try re-running configure with the
      '--disable-dependency-tracking' option to at least be able to build
      the package (albeit without support for automatic dependency tracking). 
-执行：
+- 执行：
 
 - yum install make -y
 
