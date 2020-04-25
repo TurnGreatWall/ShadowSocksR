@@ -30,7 +30,7 @@ EPEL(http://fedoraproject.org/wiki/EPEL) 是由 Fedora 社区打造，为 RHEL �
 
  
 
-(注意：但是有时候发现还是安装不成功，可以用下面办法
+# (注意：但是有时候发现还是安装不成功，可以用下面办法
 
 （1）安装setuptools
 - yum install -y python-setuptools
@@ -43,7 +43,7 @@ EPEL(http://fedoraproject.org/wiki/EPEL) 是由 Fedora 社区打造，为 RHEL �
 （3）测试pip是否安装成功
 
 - pip
-)
+# )
 
 
 
