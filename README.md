@@ -14,17 +14,17 @@ SSRR
 #### 
 
 1、下载并解压
-wget https://download.libsodium.org/libsodium/releases/libsodium-1.0.18-stable.tar.gz
-tar -zxf libsodium-1.0.18-stable.tar.gz
-cd libsodium-stable
+- wget https://download.libsodium.org/libsodium/releases/libsodium-1.0.18-stable.tar.gz
+- tar -zxf libsodium-1.0.18-stable.tar.gz
+- cd libsodium-stable
 备用下载地址：https://down.24kplus.com/linux/libsodium-1.0.18-stable.tar.gz
 
 2、编译安装
-./configure --prefix=/usr
-make && make check
-make install
-echo /usr/local/lib > /etc/ld.so.conf.d/usr_local_lib.conf
-ldconfig
+- ./configure --prefix=/usr
+- make && make check
+- make install
+- echo /usr/local/lib > /etc/ld.so.conf.d/usr_local_lib.conf
+- ldconfig
 如出现以下错误：
 
 config.status: error: Something went wrong bootstrapping makefile fragments
@@ -33,17 +33,17 @@ config.status: error: Something went wrong bootstrapping makefile fragments
      the package (albeit without support for automatic dependency tracking). 
 执行：
 
-yum install make -y
+- yum install make -y
 
 # Centos7 安装pip
 
 1.首先查看Python版本,一般Centos 7以上都会默认安装Python
 
-pyhton  version
+- pyhton  version
 
 2.安装pip
 
-yum install python-pip
+- yum install python-pip
 
 这样一般会显示找不到python-pip包
 
@@ -53,15 +53,15 @@ yum install python-pip
 
 EPEL(http://fedoraproject.org/wiki/EPEL) 是由 Fedora 社区打造，为 RHEL 及衍生发行版如 CentOS、Scientific Linux 等提供高质量软件包的项目。
 
-yum -y install epel-release
+- yum -y install epel-release
 
 然后装pip
 
-yum install python-pip
+- yum install python-pip
 
 3.测试pip是否安装成功
 
-pip
+- pip
 
  
 
@@ -70,31 +70,31 @@ pip
 可以用下面办法
 
 （1）安装setuptools
-  yum install -y python-setuptools
+- yum install -y python-setuptools
 安装完毕后，easy_install命令就可以使用了
 
 （2）安装pip
-  easy_install pip
+- easy_install pip
 通过easy_install安装pip是最为简单的方法。pip默认安装到/usr/bin目录下。
 
 （3）测试pip是否安装成功
 
-  pip
+- pip
 
 
 
 # 拉取SSR文件
 
-cd /root
-git clone https://github.com/TurnGreatWall/ShadowSocksR.git
-cd shadowsocksr
+- cd /root
+- git clone https://github.com/TurnGreatWall/ShadowSocksR.git
+- cd shadowsocksr
 
 
 
 # 安装依赖
 
-sh ./setup_cymysql2.sh
-pip install -r requestment.txt
+- sh ./setup_cymysql2.sh
+- pip install -r requestment.txt
 
 
 
@@ -131,41 +131,41 @@ pip install -r requestment.txt
 # 运行、关闭、看日志
 
 #### 试运行，如果没有错误输出则可以用Ctrl+C关闭，然后后台运行
-python server.py
+- python server.py
  
 #### 后台运行
-bash run.sh
+- bash run.sh
  
 #### 其他命令
 #### 运行并记录日志
-sh logrun.sh
+- sh logrun.sh
 #### 停止
-sh stop.sh
+- sh stop.sh
 #### 查看日志
-sh tail.sh
+- sh tail.sh
 
 
 #### SSR 开机启动
-chmod +x /etc/rc.d/rc.local
-vi /etc/rc.d/rc.local
+- chmod +x /etc/rc.d/rc.local
+- vi /etc/rc.d/rc.local
  
 #### 加入下面的命令，保存
-bash /root/ShadowSocksR/run.sh
+- bash /root/ShadowSocksR/run.sh
 
 
 # CentOS 7.0查看和关闭防火墙
 
 #### 查看防火墙状态
 
-firewall-cmd --state
+- firewall-cmd --state
 
 #### 停止firewall
 
-systemctl stop firewalld.service
+- systemctl stop firewalld.service
 
 #### 禁止firewall开机启动
 
-systemctl disable firewalld.service 
+- systemctl disable firewalld.service 
 
 
 
@@ -173,10 +173,10 @@ systemctl disable firewalld.service
 如果架构是“面板机-数据库机-多节点机”，请务必保持各个服务器之间的时间一致，否则会产生：节点的在线数不准确、产生最后使用时间异常、单端口多用户功能失效等。
 推荐统一使用CST时间并安装校时服务：
 ####设置时区为东八区
-timedatectl set-timezone Asia/Shanghai
+- timedatectl set-timezone Asia/Shanghai
 ####自动同步服务器时间
-yum install ntp
-ntpdate cn.pool.ntp.org
+- yum install ntp
+- ntpdate cn.pool.ntp.org
 
 # 其他
 
