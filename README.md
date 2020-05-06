@@ -10,6 +10,11 @@
 - yum -y install wget
 
 
+#### Ubuntu/Debian
+- apt-get update
+- apt-get install git -y
+- apt install python-pip
+
 # Centos7 安装pip
 
 1.先安装epel扩展源
