@@ -13,7 +13,7 @@
 #### Ubuntu/Debian
 - apt-get update
 - apt-get install git -y
-- apt install python-pip
+
 
 # Centos7 安装pip
 
@@ -48,6 +48,9 @@ EPEL(http://fedoraproject.org/wiki/EPEL) 是由 Fedora 社区打造，为 RHEL �
     （3）测试pip是否安装成功
      pip
 
+# Ubuntu/Debian 安装pip
+
+- apt install python-pip
 
 
 # CentOS 7/8 安装 libsodium 最新版
