@@ -186,9 +186,12 @@ EPEL(http://fedoraproject.org/wiki/EPEL) 是由 Fedora 社区打造，为 RHEL �
 - timedatectl set-timezone Asia/Shanghai
 ### Ubuntu/Debian系统：
 - cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
-#### 自动同步服务器时间
+## 自动同步服务器时间
+### Centos7系统：
 - yum install ntp
 - ntpdate cn.pool.ntp.org
+### Ubuntu/Debian系统：
+- apt-get install ntp
 
 # 其他
 
