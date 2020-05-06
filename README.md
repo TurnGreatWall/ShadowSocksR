@@ -149,10 +149,10 @@ EPEL(http://fedoraproject.org/wiki/EPEL) 是由 Fedora 社区打造，为 RHEL �
 
 
 # SSR 开机启动
-###Centos系统：
+### Centos系统：
 - chmod +x /etc/rc.d/rc.local
 - vi /etc/rc.d/rc.local
-###Ubuntu/Debian系统：
+### Ubuntu/Debian系统：
 - chmod +x /etc/rc.local
 - nano /etc/rc.local
 
