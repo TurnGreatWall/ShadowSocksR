@@ -53,7 +53,7 @@ EPEL(http://fedoraproject.org/wiki/EPEL) 是由 Fedora 社区打造，为 RHEL �
 - apt install python-pip
 
 
-# CentOS 7/8 安装 libsodium 最新版
+# CentOS 7/Ubuntu/Debian 安装 libsodium 最新版
 #### 
 
 1、下载并解压
