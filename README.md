@@ -100,8 +100,10 @@ EPEL(http://fedoraproject.org/wiki/EPEL) 是由 Fedora 社区打造，为 RHEL �
 
 
 # 编辑数据库连接信息
-
+- CentOS 7使用vi命令：
 - vi usermysql.json
+- Ubuntu/Debian使用nano命令：
+- nano usermysql.json
 
 ##### host 数据库地址，如果是本机就是127.0.0.1
 ##### port 数据库连接端口
