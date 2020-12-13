@@ -87,7 +87,7 @@ EPEL(http://fedoraproject.org/wiki/EPEL) 是由 Fedora 社区打造，为 RHEL �
 # 拉取SSR文件
 
 - cd /root
-- git clone https://github.com/TurnGreatWall/shadowsocksr.git
+- git clone https://github.com/TurnGreatWall/shadowsocksr.git       (如遇到错误请先运行yum install git)
 - cd shadowsocksr
 
 
