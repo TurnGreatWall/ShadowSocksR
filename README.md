@@ -64,7 +64,7 @@ EPEL(http://fedoraproject.org/wiki/EPEL) 是由 Fedora 社区打造，为 RHEL �
 
 
 2、编译安装
-- ./configure --prefix=/usr
+- ./configure --prefix=/usr(如遇到错误请先运行yum install gcc build-essential)
 - make && make check
 - make install
 - echo /usr/local/lib > /etc/ld.so.conf.d/usr_local_lib.conf
